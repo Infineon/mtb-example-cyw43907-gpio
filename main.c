@@ -7,7 +7,7 @@
 * Related Document: README.md
 *
 *******************************************************************************
-* $ Copyright 2021 Cypress Semiconductor $
+* $ Copyright 2021-2023 Cypress Semiconductor $
 *******************************************************************************/
 
 #include "cy_retarget_io.h"
@@ -63,7 +63,7 @@ int main(void)
         CY_ASSERT(0);
     }
 
-    /* Initialize retarget-io to use the debug UART port */
+    /* Initialize retarget-io to use the debug UART port. */
     result = cy_retarget_io_init(CYBSP_DEBUG_UART_TX, CYBSP_DEBUG_UART_RX,
                                  CY_RETARGET_IO_BAUDRATE);
 
